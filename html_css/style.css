@@ -1,0 +1,62 @@
+body {
+ font-family: monospace;
+ background-color: #0f111a; /* Very dark slate background for the whole page */
+}
+main {
+ background-color: #ffe4e1;
+ color: #f0f6fc;
+ margin-left: 10px;
+ height: 60vh;
+}
+header, footer {
+ background-color: #161b22; /* Dark metallic gray for headers and footers */
+ color: #fff;
+ padding: 1rem;
+ height: 50px;
+}
+
+header, nav {
+ margin-bottom: 10px;
+ flex-basis: 50%;
+}
+
+footer {
+ margin-top: 10px; }
+nav {
+ background-color: #ffffff;
+ color: #333333; /* Dark gray text for readability */
+ padding: 1rem;
+ height: 20px;
+}
+
+.container1 {
+ display: flex;
+ flex-direction: column;
+ flex: 1;
+}
+header, nav, main,footer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 10px;
+}
+.wrapper {
+ display: flex;
+ flex-direction: column;
+ font-weight: 600;
+}
+.price {
+ color: #ff7b72; /* Warm coral red to highlight the cost */
+ font-size: 1.1rem; }
+/* Dark Mode Add to Cart Button Styling */
+.add-to-cart {
+ background-color: #238636; /* Bright forest green for actionable checkout */
+ color: white;
+ border: none;
+ padding: 6px 12px;
+ border-radius: 6px;
+ cursor: pointer;
+ font-weight: bold;
+ font-family: monospace;
+ transition: background-color 0.2s;
+}
