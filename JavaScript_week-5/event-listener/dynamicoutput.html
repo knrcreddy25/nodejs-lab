@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Greeting</title>
+</head>
+<body>
+
+      <input type="text" id="user1" placeholder="Enter your name">
+    <button onclick="greetUser()">Greet </button>
+
+    <!-- This empty paragraph will display the final output text -->
+    <p id="greetingOutput"></p>
+
+    <script>
+        function greetUser() {
+            // Get the value typed into the input field
+            let userName = document.getElementById("user1").value;
+            
+            // Put the text inside the empty paragraph tag
+            document.getElementById("greetingOutput").innerText = "Welcome to nodejs lab, " + userName + "!";
+        }
+    </script>
+
+</body>
+</html>

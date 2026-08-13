@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML event attribute</title>
+</head>
+<body>
+
+    <h2>Change the Background Color</h2>
+    <button onclick="changeColor('lightblue')">Light Blue</button>
+    <button onclick="changeColor('lightgreen')">Light Green</button>
+    <button onclick="changeColor('pink')">Pink</button>
+    <button onclick="changeColor('white')">Reset</button>
+
+    <script>
+        function changeColor(chosenColor) {
+            
+            document.body.style.backgroundColor = chosenColor;
+        }
+    </script>
+
+</body>
+</html>
