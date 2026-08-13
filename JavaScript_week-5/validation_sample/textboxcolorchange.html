@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text Box Color</title>
+</head>
+<body>
+
+    <h2>Change Input Color on Button Click</h2>
+       <input type="text" id="targetBox">
+        <button onclick="changeTextBoxColor()">Change Color</button>
+        <button onclick="resetColor()">Reset</button>
+
+    <script>
+        function changeTextBoxColor() {
+           let textBox = document.getElementById("targetBox");
+            
+            //  Change its background and border styles
+            textBox.style.backgroundColor = "lightgreen";
+            textBox.style.borderColor = "red";
+            textBox.style.color = "yellow"; // Changes the text typing color
+        }
+function resetColor() {
+            // Setting values to empty strings restores the default look
+let textBox = document.getElementById("targetBox");    
+        textBox.style.backgroundColor = "";
+            textBox.style.borderColor = "";
+textBox.style.color="";
+textBox.value="";        
+}
+    </script>
+</body>
+</html>
