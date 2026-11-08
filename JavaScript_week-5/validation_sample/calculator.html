@@ -1,0 +1,82 @@
+<html>
+<head>
+<script language='JavaScript'>
+function add(){
+var num1=parseInt(frm.first.value);
+var num2=parseInt(frm.second.value);
+var res=num1+num2;
+frm.result.value=res;
+}
+
+function sub(){
+var num1=parseInt(frm.first.value);
+var num2=parseInt(frm.second.value);
+var res=num1-num2;
+frm.result.value=res;
+}
+
+function mul(){
+var num1=parseInt(frm.first.value);
+var num2=parseInt(frm.second.value);
+var res=num1*num2;
+frm.result.value=res;
+}
+function div()
+{
+var num1=parseInt(frm.first.value);
+var num2=parseInt(frm.second.value);
+if (num2 ==0)
+{
+window.alert("division is not possible");
+}
+else
+{
+var res=num1/num2;
+frm.result.value=res;
+}
+}
+function fact()
+{
+ var num=parseInt(frm.first.value);
+ var fact=1;
+ if (num==0)
+ frm.result.value=fact;
+ else
+ {
+ while(num!=0)
+ {
+  fact=fact*num;
+  num=num-1
+  }
+  frm.result.value=fact;
+  }
+  }
+
+</script>
+<style>
+.label {font-family:verdana;color:blue}
+.button {font-mamily:verdana;color:blue;border:0;background:pink;width:80}
+</style>
+</head>
+<body bgcolor='lightgreen'>
+<center>
+<font color='blue' size='+3'>
+   Calculator<br>
+</font>
+<table cellpadding='5' cellspacing='0'border='1'>
+<form name='frm'>
+<tr><td class='label'>First Number</td><td><input type='text' name='first'></td></tr>
+<tr><td class='label'>Second Number</td><td> <input type='text' name='second'></td></tr>
+<tr><td class='label'>Result</td><td> <input type='text' name='result'></td></tr>
+<tr><td colspan=2 align='center'>
+<input type='button' value='Add' onClick='add()' class='button'> 
+<input type='button' value='Sub' onClick='sub()' class='button'>
+<input type='button' value='Mul' onClick='mul()' class='button'>
+<input type='button' value='div' onClick='div()' class='button'>
+<input type='button' value='reset' onClick='reset()' class='button'>
+<input type='button' value='fact' onclick='fact()' class='button'>
+</td></tr>
+</form>
+</table>
+</center>
+</body></html>

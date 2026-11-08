@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The addEventListener() Method</h2>
+<button id="myBtn">click</button>
+<p id="demo">magic</p>
+<script>
+
+const btn = document.getElementById("myBtn");
+// Add EventListener to btn\
+
+btn.addEventListener("click",myfunction);
+
+function myfunction()
+{
+    document.getElementById("demo").innerHTML="welcome"; 
+// alert( "welcome");
+}
+
+
+</script>
+</body>
+</html>
