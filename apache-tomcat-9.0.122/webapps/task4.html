@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    const APIKey = "YOUR_API_KEY";
+
+    async function getWeatherInfo() {
+
+        // 1. Get city from textbox
+        let city = document.getElementById("textbox1").value;
+
+        // 2. Create API URL
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`;
+
+        try {
+            // 3. Send request to API
+            let response = await fetch(url);
+
+            // Check whether request succeeded
+            if (!response.ok)
+                throw new Error("Unable to get weather");
+
+            // 4. Convert response to JSON
+            let data = await response.json();
+
+            // 5. Display data in HTML
+            document.getElementById("cityName").textContent = data.name;
+
+            document.getElementById("max").textContent = data.main.temp_max + "C";
+
+            document.getElementById("min").textContent = data.main.temp_min + "C";
+
+            document.getElementById("wind").textContent = data.wind.speed + " m/s";
+
+            document.getElementById("desc").textContent = data.weather[0].description;
+
+        }
+        catch(error) {
+            alert(error.message);
+        }
+    }
+</script>
+</head>
+
+<body>
+
+    <!-- Input city -->
+    <input type="text" id="textbox1" placeholder="Enter City">
+
+    <!-- Call JavaScript function -->
+    <button onclick="getWeatherInfo()">Get Weather</button>
+
+    <!-- Display output -->
+    <h2>Weather Updates</h2>
+
+    City: <span id="cityName"></span><br>
+    Max Temperature: <span id="max"></span><br>
+    Min Temperature: <span id="min"></span><br>
+    Wind Speed: <span id="wind"></span><br>
+    Description: <span id="desc"></span>
+
+</body>
+</html>

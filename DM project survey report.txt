@@ -1,0 +1,9 @@
+DM : project/survey report --07/11
+COA : ClassNotes
+OOPJ : 	1. Exam on 28/10 
+	2. Assesment video --31/10
+SE : PPT 
+I AND E : assignments 3 4 5 & project 
+
+NODEJS lab : project --29/10
+ES : project 29/10S
