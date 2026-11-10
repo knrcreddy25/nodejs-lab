@@ -1,0 +1,50 @@
+<web-app>
+
+    <!-- Cookie Servlets -->
+    <servlet>
+        <servlet-name>CookieLoginServlet</servlet-name>
+        <servlet-class>CookieLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieLoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookieRetrieveServlet</servlet-name>
+        <servlet-class>CookieRetrieveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieRetrieveServlet</servlet-name>
+        <url-pattern>/retrieve</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session Servlets -->
+    <servlet>
+        <servlet-name>SessionLoginServlet</servlet-name>
+        <servlet-class>SessionLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionLoginServlet</servlet-name>
+        <url-pattern>/login1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionRetrieveServlet</servlet-name>
+        <servlet-class>SessionRetrieveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionRetrieveServlet</servlet-name>
+        <url-pattern>/retrieve1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>

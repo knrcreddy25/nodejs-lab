@@ -1,9 +1,6 @@
 
 import java.io.*;
 import javax.servlet.http.*;
-import javax.servlet.annotation.WebServlet;
-
-@WebServlet("/login")
 public class CookieLoginServlet extends HttpServlet {
     public void doPost(HttpServletRequest req,
                        HttpServletResponse res) throws IOException {

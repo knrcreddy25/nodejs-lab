@@ -1,9 +1,6 @@
 
 import java.io.*;
 import javax.servlet.http.*;
-import javax.servlet.annotation.WebServlet;
-
-@WebServlet("/retrieve1")
 public class SessionRetrieveServlet extends HttpServlet {
     public void doGet(HttpServletRequest req,
                       HttpServletResponse res) throws IOException {
